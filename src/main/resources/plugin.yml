@@ -1,0 +1,5 @@
+name: S BanAnimations
+version: '${project.version}'
+main: com.stanexe.sbananimations.SBanAnimations
+authors: [ StanEXE ]
+website: stanexe.com
