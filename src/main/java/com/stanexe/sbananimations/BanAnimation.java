@@ -7,6 +7,5 @@ public enum BanAnimation {
     VILLAGER_DEATH,
     FLAME,
     TELEPORT,
-    BAT,
-    NONE
+    BAT
 }

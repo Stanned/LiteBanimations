@@ -1,5 +1,6 @@
 package com.stanexe.sbananimations.commands;
 
+import com.google.common.collect.Lists;
 import com.stanexe.sbananimations.BanAnimation;
 import com.stanexe.sbananimations.SBanAnimations;
 import com.stanexe.sbananimations.util.Cache;
@@ -43,6 +44,7 @@ public class BanAnimationsCommand implements CommandExecutor, TabCompleter {
 
             // Save animation in cache & database
             Cache.putInAnimationsCache(player.getUniqueId(), animation);
+            player.sendMessage(ChatColor.GREEN + "You have selected the " + animation + " animation!");
             Bukkit.getScheduler().runTaskAsynchronously(plugin, () -> {
                 try {
                     Connection conn = Database.getConn();
@@ -56,6 +58,7 @@ public class BanAnimationsCommand implements CommandExecutor, TabCompleter {
                     plugin.getLogger().warning("An error has occurred in the database. Please report this to the plugin author if this keeps happening.");
                 }
             });
+
         }
         return true;
     }
@@ -66,8 +69,14 @@ public class BanAnimationsCommand implements CommandExecutor, TabCompleter {
         List<BanAnimation> animations = Arrays.asList(BanAnimation.class.getEnumConstants());
         List<String> animationsList = new ArrayList<>();
         animations.forEach((animation) -> animationsList.add(animation.toString()));
+        List<String> returnList = Lists.newArrayList();
         if (args.length == 1) {
-            return animationsList;
+            for (String s : animationsList) {
+                if (s.toUpperCase().startsWith(args[0].toUpperCase()) && sender.hasPermission("sbananimations." + s)) {
+                    returnList.add(s);
+                }
+            }
+            return returnList;
         }
         return null;
     }

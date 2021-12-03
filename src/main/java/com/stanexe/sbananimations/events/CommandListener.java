@@ -24,7 +24,6 @@ public class CommandListener implements Listener {
         }
         commands.forEach((command) -> {
             if (sentCommand.equalsIgnoreCase((String) command)) {
-                e.getPlayer().sendMessage("Match!");
                 AnimationPlayer.playAnimation(e.getPlayer(), target);
             }
         });
