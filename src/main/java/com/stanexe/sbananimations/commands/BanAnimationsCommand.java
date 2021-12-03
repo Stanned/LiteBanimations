@@ -56,7 +56,6 @@ public class BanAnimationsCommand implements CommandExecutor, TabCompleter {
                     plugin.getLogger().warning("An error has occurred in the database. Please report this to the plugin author if this keeps happening.");
                 }
             });
-
         }
         return true;
     }
