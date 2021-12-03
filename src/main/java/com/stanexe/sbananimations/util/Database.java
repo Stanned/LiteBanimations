@@ -13,7 +13,10 @@ public class Database {
 
     public static void initDB() {
         if (getConn() != null) {
-            initTables();
+            Bukkit.getScheduler().runTaskAsynchronously(plugin, () -> {
+                initTables();
+                Cache.loadCacheFromDB();
+            });
             plugin.getLogger().info("Successfully connected to the Database!");
         }
     }
@@ -71,7 +74,7 @@ public class Database {
                 "CREATE TABLE IF NOT EXISTS `" + tablePrefix + "animations` (`uuid` CHAR(36) PRIMARY KEY NOT NULL, `animation` TEXT);"
         };
         int i;
-        for (i = 0; i <sql.length; i++) {
+        for (i = 0; i < sql.length; i++) {
             try {
                 Statement stmt = conn.createStatement();
                 stmt.execute(sql[i]);

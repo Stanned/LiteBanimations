@@ -10,4 +10,5 @@ port: 3306
 database: database
 username: username
 password: password
+
 table-prefix: 'sbananim_'

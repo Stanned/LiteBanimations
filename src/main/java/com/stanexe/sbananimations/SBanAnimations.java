@@ -1,7 +1,10 @@
 package com.stanexe.sbananimations;
 
+import com.stanexe.sbananimations.commands.BanAnimationsCommand;
 import com.stanexe.sbananimations.util.Database;
 import org.bukkit.plugin.java.JavaPlugin;
+
+import java.util.Objects;
 
 public final class SBanAnimations extends JavaPlugin {
 
@@ -19,8 +22,7 @@ public final class SBanAnimations extends JavaPlugin {
         Database.initDB();
 
 
-
-//        getCommand("bananimations").setExecutor(new BanAnimationsCommand());
+        Objects.requireNonNull(getCommand("bananimations")).setExecutor(new BanAnimationsCommand());
         getLogger().info("SBanAnimations has been enabled!");
 
     }
