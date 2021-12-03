@@ -1,0 +1,13 @@
+# Do not change this.
+config-version: 1.0
+
+# Type of database to use, choose SQLITE for a local database and MYSQL if you use a MYSQL database
+database-type: SQLITE
+
+# This will only be used if you use MYSQL as database-type
+host: localhost
+port: 3306
+database: database
+username: username
+password: password
+table-prefix: 'sbananim_'

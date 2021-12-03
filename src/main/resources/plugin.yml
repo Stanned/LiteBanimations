@@ -1,4 +1,5 @@
-name: S BanAnimations
+name: S-BanAnimations
+api-version: 1.18
 version: '${project.version}'
 main: com.stanexe.sbananimations.SBanAnimations
 authors: [ StanEXE ]
