@@ -30,6 +30,6 @@ public final class SBanAnimations extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        getLogger().info("SBanAnimations is disabling...");
+        getLogger().info("SBanAnimations has been disabled.");
     }
 }
