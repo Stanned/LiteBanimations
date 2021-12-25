@@ -1,8 +1,13 @@
 name: S-BanAnimations
-api-version: 1.18
+api-version: 1.16
 version: '${project.version}'
 main: com.stanexe.sbananimations.SBanAnimations
 authors: [ StanEXE ]
 website: stanexe.com
 commands:
-  bananimations:
+  bananimation:
+    aliases:
+      - bananim
+      - bananimations
+    description: 'Main command for SBanAnimations'
+    usage: "/bananimation <animation>"
