@@ -16,6 +16,7 @@ public class AnimationPlayer {
     private static final SBanAnimations plugin = SBanAnimations.getInstance();
 
     public static void playAnimation(Player moderator, Player target) {
+        if (!target.isOnline()) {return;}
         BanAnimation animationType = Cache.getAnimationsCache().get(moderator.getUniqueId());
         Location location = target.getLocation();
         if (location.getWorld() == null) {

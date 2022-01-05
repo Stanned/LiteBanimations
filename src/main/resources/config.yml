@@ -12,9 +12,3 @@ username: username
 password: password
 
 table-prefix: 'sbananim_'
-
-# The commands specified here will be watched for and will be used for the ban animations. This will ONLY work if the **first** argument is the player you are punishing.
-# For example: /ban <player> <reason> will work. /ban <reason> <player> will NOT.
-commands:
-  - "ban"
-  - "tempban"

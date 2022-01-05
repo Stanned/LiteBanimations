@@ -11,3 +11,5 @@ commands:
       - bananimations
     description: 'Main command for SBanAnimations'
     usage: "/bananimation <animation>"
+depend:
+  - LiteBans
