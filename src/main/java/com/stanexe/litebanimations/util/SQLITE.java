@@ -1,13 +1,13 @@
-package com.stanexe.sbananimations.util;
+package com.stanexe.litebanimations.util;
 
-import com.stanexe.sbananimations.SBanAnimations;
+import com.stanexe.litebanimations.LiteBanimations;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class SQLITE {
-    private final SBanAnimations plugin = SBanAnimations.getInstance();
+    private final LiteBanimations plugin = LiteBanimations.getInstance();
 
     public Connection openConnection() throws SQLException {
         Connection conn;

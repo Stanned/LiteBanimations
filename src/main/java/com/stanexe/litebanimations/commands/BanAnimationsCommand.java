@@ -1,10 +1,10 @@
-package com.stanexe.sbananimations.commands;
+package com.stanexe.litebanimations.commands;
 
 import com.google.common.collect.Lists;
-import com.stanexe.sbananimations.BanAnimation;
-import com.stanexe.sbananimations.SBanAnimations;
-import com.stanexe.sbananimations.util.Cache;
-import com.stanexe.sbananimations.util.Database;
+import com.stanexe.litebanimations.BanAnimation;
+import com.stanexe.litebanimations.LiteBanimations;
+import com.stanexe.litebanimations.util.Cache;
+import com.stanexe.litebanimations.util.Database;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -21,7 +21,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class BanAnimationsCommand implements CommandExecutor, TabCompleter {
-    private static final SBanAnimations plugin = SBanAnimations.getInstance();
+    private static final LiteBanimations plugin = LiteBanimations.getInstance();
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {

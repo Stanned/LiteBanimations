@@ -11,4 +11,4 @@ database: database
 username: username
 password: password
 
-table-prefix: 'sbananim_'
+table-prefix: 'litebanim_'

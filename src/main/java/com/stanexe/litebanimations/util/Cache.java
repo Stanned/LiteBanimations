@@ -1,7 +1,7 @@
-package com.stanexe.sbananimations.util;
+package com.stanexe.litebanimations.util;
 
-import com.stanexe.sbananimations.BanAnimation;
-import com.stanexe.sbananimations.SBanAnimations;
+import com.stanexe.litebanimations.BanAnimation;
+import com.stanexe.litebanimations.LiteBanimations;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -13,7 +13,7 @@ import java.util.UUID;
 public class Cache {
 
     private static final HashMap<UUID, BanAnimation> animationsCache = new HashMap<>();
-    private static final SBanAnimations plugin = SBanAnimations.getInstance();
+    private static final LiteBanimations plugin = LiteBanimations.getInstance();
     private static final String tablePrefix = plugin.getConfig().getString("table-prefix");
 
     public static void loadCacheFromDB() {

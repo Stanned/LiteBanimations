@@ -1,4 +1,4 @@
-package com.stanexe.sbananimations;
+package com.stanexe.litebanimations;
 
 public enum BanAnimation {
     LIGHTNING,

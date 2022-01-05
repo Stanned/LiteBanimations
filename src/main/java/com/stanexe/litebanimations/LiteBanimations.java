@@ -1,8 +1,8 @@
-package com.stanexe.sbananimations;
+package com.stanexe.litebanimations;
 
-import com.stanexe.sbananimations.commands.BanAnimationsCommand;
-import com.stanexe.sbananimations.util.AnimationPlayer;
-import com.stanexe.sbananimations.util.Database;
+import com.stanexe.litebanimations.commands.BanAnimationsCommand;
+import com.stanexe.litebanimations.util.AnimationPlayer;
+import com.stanexe.litebanimations.util.Database;
 import litebans.api.Entry;
 import litebans.api.Events;
 import org.bukkit.Bukkit;
@@ -13,11 +13,11 @@ import org.bukkit.scheduler.BukkitRunnable;
 import java.util.Objects;
 import java.util.UUID;
 
-public final class SBanAnimations extends JavaPlugin {
+public final class LiteBanimations extends JavaPlugin {
 
-    private static SBanAnimations instance;
+    private static LiteBanimations instance;
 
-    public static SBanAnimations getInstance() {
+    public static LiteBanimations getInstance() {
         return instance;
     }
 

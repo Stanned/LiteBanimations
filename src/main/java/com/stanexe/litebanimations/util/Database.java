@@ -1,6 +1,6 @@
-package com.stanexe.sbananimations.util;
+package com.stanexe.litebanimations.util;
 
-import com.stanexe.sbananimations.SBanAnimations;
+import com.stanexe.litebanimations.LiteBanimations;
 import org.bukkit.Bukkit;
 
 import java.sql.Connection;
@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class Database {
-    private static final SBanAnimations plugin = SBanAnimations.getInstance();
+    private static final LiteBanimations plugin = LiteBanimations.getInstance();
     private static Connection conn;
 
     public static void initDB() {

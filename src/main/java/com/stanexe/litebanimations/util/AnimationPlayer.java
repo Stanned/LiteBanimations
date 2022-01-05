@@ -1,7 +1,7 @@
-package com.stanexe.sbananimations.util;
+package com.stanexe.litebanimations.util;
 
-import com.stanexe.sbananimations.BanAnimation;
-import com.stanexe.sbananimations.SBanAnimations;
+import com.stanexe.litebanimations.BanAnimation;
+import com.stanexe.litebanimations.LiteBanimations;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Particle;
@@ -13,7 +13,7 @@ import org.bukkit.entity.Villager;
 
 
 public class AnimationPlayer {
-    private static final SBanAnimations plugin = SBanAnimations.getInstance();
+    private static final LiteBanimations plugin = LiteBanimations.getInstance();
 
     public static void playAnimation(Player moderator, Player target) {
         if (!target.isOnline()) {return;}

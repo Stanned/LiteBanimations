@@ -1,7 +1,7 @@
-name: S-BanAnimations
+name: LiteBanimations
 api-version: 1.16
 version: '${project.version}'
-main: com.stanexe.sbananimations.SBanAnimations
+main: com.stanexe.litebanimations.LiteBanimations
 authors: [ StanEXE ]
 website: stanexe.com
 commands:
@@ -9,7 +9,7 @@ commands:
     aliases:
       - bananim
       - bananimations
-    description: 'Main command for SBanAnimations'
+    description: 'Main command for LiteBanimations'
     usage: "/bananimation <animation>"
 depend:
   - LiteBans
