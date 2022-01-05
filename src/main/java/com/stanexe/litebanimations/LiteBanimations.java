@@ -23,18 +23,18 @@ public final class LiteBanimations extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        getLogger().info("SBanAnimations by StanEXE is loading...");
+        getLogger().info("LiteBanimations by StanEXE is loading...");
         instance = this;
         this.saveDefaultConfig();
         Database.initDB();
         Objects.requireNonNull(getCommand("bananimations")).setExecutor(new BanAnimationsCommand());
-        getLogger().info("SBanAnimations has been enabled!");
+        getLogger().info("LiteBanimations has been enabled!");
         registerEvents();
     }
 
     @Override
     public void onDisable() {
-        getLogger().info("SBanAnimations has been disabled.");
+        getLogger().info("LiteBanimations has been disabled.");
     }
 
 

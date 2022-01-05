@@ -34,7 +34,7 @@ public class BanAnimationsCommand implements CommandExecutor, TabCompleter {
         if (args.length == 0) {
             player.sendMessage(ChatColor.GREEN + "Please select one of the animation types: " + ChatColor.RED + "/bananimation <animation>");
         } else {
-            if (!(player.hasPermission("sbananimations." + args[0]))) {
+            if (!(player.hasPermission("litebanimations." + args[0]))) {
                 player.sendMessage(ChatColor.RED + "You do not have permission to use that animation!");
             }
             BanAnimation animation;
@@ -75,7 +75,7 @@ public class BanAnimationsCommand implements CommandExecutor, TabCompleter {
         List<String> returnList = Lists.newArrayList();
         if (args.length == 1) {
             for (String s : animationsList) {
-                if (s.toUpperCase().startsWith(args[0].toUpperCase()) && sender.hasPermission("sbananimations." + s)) {
+                if (s.toUpperCase().startsWith(args[0].toUpperCase()) && sender.hasPermission("litebanimations." + s)) {
                     returnList.add(s);
                 }
             }
